@@ -22,11 +22,27 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What problem does the context API help solve?
-- [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
-- [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
-- [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
-- [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+- [x] What problem does the context API help solve?
+
+being able to give access to state to any component in the app.
+
+- [x] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+actions - a string that represents what is wanting to be done. If you wanted to buy a apple an action would be BUY_APPLE.
+reducer - is a function that makes the action happen.
+store - is where the state is being held so the app can reach it. I do not know this quote of 'single source of truth'
+
+- [x] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+application state == global state | component state == local state. Where so you need the state. If you need to pass state to many components, then use redux or context. If your state is only being passed and used within a few components that are close, prop drilling is gonna be fine.
+
+- [x] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+thunk will allow for side effects. so allows for api calls or async code?
+
+- [x] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+I have not learned enough to give an opinion one way or the other. I lean toward redux becasue it is popular and I can find some info on it besides the official docs. Docs are difficult for me to read.
 
 ## Project Set Up
 
